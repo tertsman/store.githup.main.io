@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Sign Up page</title>
+    <link rel="stylesheet" href="style.css/style.css">
+    <link rel="shortcut icon" href="products/fav.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<style>
+    body{
+        background-color: #f2f3f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+</style>
+<body>
+    <div class="c-signup" id="c-signup">
+       <div class="form-sign sign-up">
+        <form action="">
+            <h1>Create An Account</h1>
+            <div class="s-icon">
+                <a href="#" class="icon">
+                    <i class="ri-google-fill"></i>
+                </span></a>
+                <a href="#" class="icon">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="#"  class="icon">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+            </div>
+            <span>Or Use your email for registeration</span>
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your Email">
+            <input type="password" placeholder="Enter your Password">
+            <button>Sign Up</button>
+        </form>
+       </div>
+       <div class="form-sign sign-in">
+        <form action="">
+            <h1>Sign In</h1>
+            <div class="s-icon">
+                <a href="#" class="icon">
+                    <i class="ri-google-fill"></i>
+                </a>
+                <a href="#" class="icon">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="#"class="icon">
+                    <i class="ri-facebook-circle-fill"></i>
+                </a>
+            </div>
+            <span>Or Use your email Password</span>
+          
+            <input type="email" placeholder="Enter your Email">
+            <input type="password" placeholder="Enter your Password">
+            <a href="foget">Forget Your Password</a>
+            <button>Sign In</button>
+        </form>
+       </div>
+       <div class="toggl-sig">
+            <div class="toggle-e">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hided" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello Freind!</h1>
+                    <p>Register with  your personal details to use all of site features</p>
+                    <button class="hided" id="register">Sign Up</button>
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <script>
+    const cSignUp = document.getElementById('c-signup');
+    const registerBtn = document.getElementById('register');
+    const loginBtn = document.getElementById('login');
+
+registerBtn.addEventListener('click', () => {
+    cSignUp.classList.add('active');
+})
+// remove class
+loginBtn.addEventListener('click', () => {
+    cSignUp.classList.remove('active');
+})
+    </script>
+</body>
+</html>
